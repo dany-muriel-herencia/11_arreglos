@@ -1,24 +1,27 @@
 #include<iostream>
 using namespace std;
+
 int main(){
-     int c,a,n,d,b,i;
-     cout<<"ingrese la capacidad de los elementos. ";cin>>n;
-     int n[a];
-     for(i=1;i<=n;i++){
-        
-        cout<<"ingrese e los numeros el primer elemento :";cin>>n[i];
-            b=b+n[i];
-        if(i==0){
-            c=c+1;
+    int n, d, b = 0, c = 0;
+
+    cout << "Ingrese la capacidad de los elementos: ";
+    cin >> n;
+
+    int elementos[n];
+
+    for(int i = 0; i < n; i++){
+        cout << "Ingrese el elemento " << i + 1 << ": ";
+        cin >> elementos[i];
+        b += elementos[i];
+        if(elementos[i] == 0){
+            c += 1;
         }
-     }
-     
-     d=(c*100)/n;
-     cout<<"la suma es :"<<b;
-     cout<<"el porcentaje es "<<d;
+    }
 
+    d = (c * 100) / n;
 
-
+    cout << "La suma es: " << b << endl;
+    cout << "El porcentaje de ceros es: " << d << "%" << endl;
 
     return 0;
 }
