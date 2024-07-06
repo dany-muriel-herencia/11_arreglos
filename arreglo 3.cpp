@@ -5,6 +5,7 @@ int main(){
 
     int temperaturaminima[7];
     int temperaturamaxima[7];
+    int temperaturapromedio[7];
     cout<<"ingrese la temperatura minima en grados celcius"<<endl;
 
     for (int i = 0; i < 7; ++i) {
@@ -16,4 +17,15 @@ int main(){
        cout << "Ingrese la temperatura maxima " << k + 1 << ": ";
        cin >> temperaturamaxima[k];
     }
-}
+    
+    for (int i = 0; i < 7; ++i) {
+        temperaturapromedio[i] = (temperaturamaxima[i] + temperaturaminima[i])/2;
+    }
+
+    // Imprimir el resultado
+    cout << "La temperatura promedio es: ";
+    for (int i = 0; i < 7; ++i) {
+        cout << temperaturapromedio[i] << " ";
+    }
+    return 0;
+    }
