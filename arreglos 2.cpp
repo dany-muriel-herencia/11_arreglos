@@ -19,6 +19,15 @@ int main() {
             arreglo3[e++] = arreglo[i];  
         }
     }
+        cout << "Los elementos pares son: " << endl;
+    for (int k = 0; k < g; ++k) {
+        cout << "Elemento " << k + 1 << ": " << arreglo2[k] << endl;
+    }
+
+    cout << "Los elementos impares son: " << endl;
+    for (int x = 0; x < e; ++x) {
+        cout << "Elemento " << x + 1 << ": " << arreglo3[x] << endl;
+    }
 
 
     return 0;
