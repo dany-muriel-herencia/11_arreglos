@@ -15,10 +15,11 @@ void creciente(int a,int b){
     int c,d,g,j=0,arreglo[a];
     for(int i=0;i<a;i++){
         j++;
-        c=j*b;
+        arreglo[i]=j*b;
         cout<<"primer elemento  "<<i+1<<" : "<<arreglo[i]<<endl;
         
     }
 
 }
+
 
